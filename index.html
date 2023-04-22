@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <form action="reservation.php" method="post">
+    
+    
+    <h1 class="mx-auto" style="width: 200px;">Earth Survey</h1>
+    
+    <div>
+    <p>Please fill out the following form with your observations from your time spent on Earth. When finished, submit this survey to the Office of Terran Observation. All surveys will be processed within 5-10 cycles, and reimbursement will be issued no later than 20 cycles after your return to your home system.</p>
+    </div>
+    
+      <div id="form">
+      <div>
+        <section class="mb-3 row">
+        <label id="name">Name:</label>
+        <input type="name" class="col-sm-5 col-form-label" id="name" placeholder="Enter your name or closest approximation" required>
+      </section>
+    </div>
+      
+       <div>
+        <section class="mb-3 row">
+        <label id="age">Age:</label>
+        <input type="name" class="col-sm-5 col-form-label" id="name" placeholder="Enter your age" required>
+      </section>
+    </div>
+    
+    <div>
+      <section class="mb-3 row">
+        <label id="location-label">Home Star System:</label>
+        <select class="col-sm-5 col-form-label" id="dropdown">
+          <option value="AC" style=""><span>Alpha Centauri</span></option>
+          <option value="BS">Barnard's Star</option>
+          <option value="LH">Luhman 16</option>
+          <option value="WI">WISE 0855−0714</option>
+          <option value="WO">Wolf 359</option>
+          <option value="OT">Other</option>
+        </select>
+      </section>
+    </div>
+      
+      <div>
+        <section class="mb-3 row">
+        <label id="where">Where on Earth were you stationed?</label>
+          <input type="where" class="col-sm-5 col-form-label" id="where" placeholder="Enter continent and country" required>
+      </section>
+      </div>
+      
+      <div>
+        <section class="mb-3 row">
+        <label id="number">How many humans did you interact with?</label>
+          <input type="number" class="col-sm-5 col-form-label" id="number" placeholder="Enter number" required>
+      </section>
+      </div>
+      
+     <div class="mb-3 row">
+        <label for="message">Anything Else?</label>
+        <textarea class="col-sm-5 col-form-label"  id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+      
+      <div  class="mb-3 row">
+        <section>Mars Photo</div>
+          
+        <div class="mb-3 row">
+            <label for="id">ID</label>
+            <input type="text" class="col-sm-5 col-form-label"  id="id" required>
+          </div>
+          
+          <div  class="mb-3 row">
+          <label for="camera">Name</label>
+          <input type="camera" id="camera" class="col-sm-5 col-form-label" placeholder="Enter Camera Name" required>
+          </div>
+        
+           <div  class="mb-3 row">
+          <label for="rover">Rover ID</label>
+          <input type="rover" class="col-sm-5 col-form-label" id="rover" placeholder="Enter Rover ID" required>
+          </div>
+          
+        <div  class="mb-3 row">
+          <label for="full-name">Full Name</label>
+          <input type="full-name" class="col-sm-5 col-form-label" id="full-name" placeholder="Enter Full Name" required>
+          </div>
+          
+        </section>
+      </div>
+   
+      
+        <button type="submit" class="btn btn-primary">Submit Survey</button>
+      </div>    
+
+</body>
